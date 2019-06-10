@@ -35,7 +35,7 @@ function typeWriter() {
 setTimeout(function(){typeWriter();}, 1850)
 // List of sentences
 var _CONTENT = [ 
-	"enthusiast.", 
+	"enthusiasts.", 
 	"beginners.", 
 	"artists.", 
 	"web designers."
