@@ -36,14 +36,6 @@ a:hover {
   border-bottom-color: #fff;
 }
 
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
-}
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: 700;
@@ -90,23 +82,20 @@ body {
 /* The Structure of the site (tested on Firefox) */
 
 .nav-bar{
-  padding: 20px 200px 46px 200px;
+  padding: 1% 13% 45.6px 13%;
   margin: 0;
   z-index: 9999;
   position: relative;
   opacity: 1;
 }
 
-.textwhite{
-  text-align: center;
-  padding: 400px 0 0 100px;
-  margin: 0;
-}
 .footer-container{
   text-align: center;
-  margin: 0px 0 0 0;
+  margin: 0;
   padding: 0;
   z-index: 2;
+  background-color: #333;
+  position: relative;
 }
 .cover{
   z-index: 2;
@@ -114,37 +103,10 @@ body {
 
 .footer-div{
   z-index: 2;
+  margin-bottom:-16px;
 }
-
-.slides{
-  padding: 350px 0 0 0;
-  margin: 0;
-  z-index: 3;
-}
-
-.card-body{
-  background: #333;
-}
-
-.card-deck{
-  margin-top: 30px;
-}
-
-.showcase{
-  margin: 70px 0 0 0;
-}
-
-
-.bottom-message{
-  margin: 0 0 20px 0;
-  color: #fff;
-  background-color: #4e4e4e;
-  position: relative;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;/* BOIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII*/
-  padding: 25px 0 1px 0;
-  text-align: center;
-  font-size: 4em;
+.footer-text{
+  margin-bottom: -2rem;
 }
 
 
@@ -153,33 +115,24 @@ body {
   background-color: #333;
   font-size: 4em;
   position: relative;
-  margin-bottom: -16px;
+  margin-bottom: -1%;
 }
 
 #demo{
   display:inline-block;
+  margin-top:100px;
+  padding:0;
 }
 
 
 .text-over-video{
   position: relative;
   height: 92.5%;
-  padding: 250px 0 50px 550px;
+  padding: 14% 0 10% 30%;
 }
 
 .text-over-video-sticky{
   margin-top: 71.4px;
-}
-
-.form-title{
-  font-size: 8em;
-}
-
-.logo{
-  margin:0;
-  width: 11.5%;
-  height: 11.5%;
-  margin-top: -5px;
 }
 
 .download{
@@ -188,11 +141,18 @@ body {
   float: left;
   text-align: left;
   margin-top: 20px;
-  padding: 20px 15px 10px 20px;
+  padding: 1% 1% 1% 1%;
   border-radius: 20px; 
 }
-.download1{
+.download-right{
   float: right;
+}
+.download-headline{
+  font-size: 2.5em;
+}
+
+.download-text{
+  font-size: 1.5em;
 }
 
 :hover.download{
@@ -222,35 +182,42 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
   }
-  .arrow span{
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-bottom: 5px solid #fff;
-    border-right: 5px solid #fff;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2.5s infinite;
+.arrow span{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #fff;
+  border-right: 5px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2.5s infinite;
+}
+.arrow span:nth-child(2){
+  animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+  animation-delay: -0.4s;
+}
+@keyframes animate {
+  0%{
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px,-20px);
   }
-  .arrow span:nth-child(2){
-    animation-delay: -0.2s;
+  50%{
+    opacity: 1;
   }
-  .arrow span:nth-child(3){
-    animation-delay: -0.4s;
-  }
-  @keyframes animate {
-    0%{
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
+  100%{
+    opacity: 0;
+    transform: rotate(45deg) translate(20px,20px);
     }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
-    }
-  }
+}
+
+.masthead-brand {
+  float: left;
+}
+.nav-masthead {
+  float: right;
+}
 
 
 
@@ -279,6 +246,7 @@ body {
   font-family: "Courier New";
   color: #fff;
   padding: 0;
+  font-size: 1.9em;
 }
 
 .typewriter:after {
@@ -308,7 +276,7 @@ body {
 
 
 /* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
+--------------------------------------------------------------------------------------------------------------------- */
 #myCarousel{
   min-height: 450px;
   min-width: 900px;
@@ -351,56 +319,18 @@ body {
 }
 .featurette-heading{
   position: inherit;
+  margin-top: 61px;
 }
-
-/* Tabs */
-
-.tabs-page{
-  margin: 0 auto 0 auto;
-  width: 95%;
-  z-index: 4;
-  padding: 0;
-}
-
-.card-deck{
-  padding: 0;
-  margin: 60px 50px 0 50px;
-}
-
-.card{
-  padding: 0;
-  margin-left: 0;
-  margin-right: 0;
-  border: 0;
-  border-radius: 15px;
-}
-:hover.card{
-  transition: transform .5s;
-  transform: scale(1.125);
-}
-.card:not(:hover){
-  transition: transform .5s;
-  transform: scale(1.0);
-}
-
-:hover.card1{
-  transition: transform .5s;
-  transform: scale(1.0);
-  cursor: pointer;
-}
-.card1:not(:hover){
-  transition: transform .5s;
-  transform: scale(0.95);
+.text-box{
+  height: 202px;
 }
 
 
-.card-body{
-  border-bottom-right-radius: 11px;
-  border-bottom-left-radius: 11px;
-  background-color: #333;
-}
+
 
 /* Feature */
+
+
 .second-part-page{
   background-color: #4e4e4e;
   position: relative;
@@ -412,6 +342,7 @@ body {
   padding: 10px 0 20px 20px;
   height: 497px;
   width: 1900px;
+  padding-top: 0;
 }
 
 
@@ -420,6 +351,7 @@ body {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
+  font-size: 3.5em;
 }
 
 
@@ -448,42 +380,26 @@ body {
 }
 
 /* Responsive Firefox */
-@media only screen and (max-width: 1312px){
-  .textwhite{
-    text-align: left;
-    padding: 22% 0 0 5%;
+@media only screen and (max-width: 1366px){
+  .myVideo{
+    top: 60%;
   }
-  .nav-bar{
-    padding: 25px 25px 0 25px;
+  .text-over-video{
+    height: 92.5%;
+    padding: 14% 0 10% 30%;
+  }
+  
+  .text-over-video-sticky{
+    margin-top: 71.4px;
   }
 }
 
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
   }
 }
-/* Responsive  Fullscreen*/
-@media only screen and (min-height: 1000px){
-  .footer-container{
-    padding: 410px 0 0 0;
-  }
-  .textwhite{
-    padding: 440px 0 0 100px;
-  }
-}
+
 
 .btn1{
   margin: 50px 0 0 0;
@@ -502,6 +418,7 @@ body {
   font-size: 4em;
   padding-left: 15px;
   margin-bottom: 40px;
+  font-weight:bolder;
 }
 
 #cursore {
@@ -522,14 +439,6 @@ body {
 		background-color: white; 
 	}
 }
-
-
-/* Google Chrome */
-/*@media only screen and (min-height: 937px){
-  .footer-container{
-    padding: 300px 0 0 0;
-  }
-}*/
 
 .preload-ani {
   -webkit-animation: animation 2000ms linear infinite both;
