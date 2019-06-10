@@ -315,14 +315,69 @@ body {
 }
 
 /* Responsive Firefox */
+
 @media only screen and (max-width: 1366px){
-  .nav-bar{
-    padding: 20px 45px 2.5px 45px;
+  .myVideo{
+    top: 60%;
   }
-  .carousel-item {
-    height: 52.6rem;
+
+  .text-over-video{
+    padding: 9% 0 0% 27%;
+    height: 90%;
+  }
+  .arrow{
+    bottom: -5%;
+  }
+  .text-over-video-sticky{
+    margin-top: 4.5%;
   }
   
+  .demo{
+    font-size: 3em;
+  }
+
+  .texte {
+    font-size: 3em;
+    margin-bottom: 2.8%;
+  }
+  .row{
+    padding-bottom: 0;
+    height: 425px;
+  }
+  .row-text{
+    max-width: 55%;
+    bottom: 10%;
+  }
+  .typewriter{
+    font-size: 1.7em;
+  }
+  .programming-background{
+    min-width: 45%;
+  }
+  .featurette-heading{
+    font-size: 3em;
+  }
+
+  .bottom-page1{
+    top: 1%;
+    margin-top: -1%;
+  }
+  .download{
+    margin-top: 20px;
+  }
+  .download-right{
+    float: right;
+  }
+  .download-headline{
+    font-size: 2em;
+  }
+  
+  .download-text{
+    font-size: 1em;
+  }
+  .download:not(:hover){
+    transform: scale(0.955);
+  }
 }
 
 @media (min-width: 40em) {

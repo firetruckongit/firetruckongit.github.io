@@ -297,6 +297,49 @@ body {
 }
 
 
+/*--------------Typing TEXT-------------*/
+
+
+.demo{
+  font-size: 4em;
+  text-align: left;
+  display: inline-block;
+  margin-top: 100px;
+  padding: 0;
+  z-index: 100;
+}
+
+.texte {
+	display: inline-block;
+	vertical-align: middle;
+	color: #fff;
+  letter-spacing: 2px;
+  font-size: 4em;
+  padding-left: 15px;
+  margin-bottom: 40px;
+  font-weight: bolder;
+  z-index: 100;
+}
+
+.cursore {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 5em;
+	background-color: white;
+  animation: blink .85s step-end infinite;
+  margin-top: -40px;
+  z-index: 100;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent; 
+	}
+	50% { 
+		background-color: white; 
+	}
+}
 
 
 
@@ -360,19 +403,24 @@ body {
   }
 
   .text-over-video{
-    padding: 14% 0 10% 25%;
+    padding: 9% 0 0% 27%;
+    height: 90%;
   }
-  
+  .arrow{
+    bottom: -5%;
+  }
   .text-over-video-sticky{
-    margin-top: 71.4px;
+    margin-top: 4.5%;
   }
   
   .demo{
-    font-size: .5em;
+    font-size: 3em;
   }
 
   .texte {
-    font-size: .5em;
+    font-size: 3em;
+    margin-bottom: 2.8%;
+    padding-left: 1%;
   }
   .row{
     padding-bottom: 0;
@@ -429,13 +477,15 @@ body {
     float: right;
   }
   .download-headline{
-    font-size: 2.2em;
+    font-size: 2em;
   }
   
   .download-text{
-    font-size: 1.2em;
+    font-size: 1em;
   }
-  
+  .download:not(:hover){
+    transform: scale(0.955);
+  }
 }
 
 @media (min-width: 62em) {
@@ -445,54 +495,6 @@ body {
 }
 
 
-.btn1{
-  margin: 50px 0 0 0;
-}
-
-
-/*--------------Typing TEXT-------------*/
-
-
-.demo{
-  font-size: 4em;
-  text-align: left;
-  display: inline-block;
-  margin-top: 100px;
-  padding: 0;
-  z-index: 100;
-}
-
-.texte {
-	display: inline-block;
-	vertical-align: middle;
-	color: #fff;
-  letter-spacing: 2px;
-  font-size: 4em;
-  padding-left: 15px;
-  margin-bottom: 40px;
-  font-weight: bolder;
-  z-index: 100;
-}
-
-.cursore {
-	display: inline-block;
-	vertical-align: middle;
-	width: 3px;
-	height: 5em;
-	background-color: white;
-  animation: blink .85s step-end infinite;
-  margin-top: -40px;
-  z-index: 100;
-}
-
-@keyframes blink {
-	from, to { 
-		background-color: transparent; 
-	}
-	50% { 
-		background-color: white; 
-	}
-}
 
 
 
