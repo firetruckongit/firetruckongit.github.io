@@ -118,12 +118,6 @@ body {
   margin-bottom: -1%;
 }
 
-#demo{
-  display:inline-block;
-  margin-top:100px;
-  padding:0;
-}
-
 
 .text-over-video{
   position: relative;
@@ -380,17 +374,26 @@ body {
 }
 
 /* Responsive Firefox */
+
 @media only screen and (max-width: 1366px){
   .myVideo{
     top: 60%;
   }
+
   .text-over-video{
-    height: 92.5%;
     padding: 14% 0 10% 30%;
   }
   
   .text-over-video-sticky{
     margin-top: 71.4px;
+  }
+  
+  .demo{
+    font-size: 3em;
+  }
+
+  .texte {
+    font-size: 3em;
   }
 }
 
@@ -404,13 +407,19 @@ body {
 .btn1{
   margin: 50px 0 0 0;
 }
+/*--------------Typing TEXT-------------*/
 
-#demo{
+
+.demo{
   font-size: 4em;
   text-align: left;
+  display: inline-block;
+  margin-top: 100px;
+  padding: 0;
+  z-index: 100;
 }
 
-#texte {
+.texte {
 	display: inline-block;
 	vertical-align: middle;
 	color: #fff;
@@ -418,10 +427,11 @@ body {
   font-size: 4em;
   padding-left: 15px;
   margin-bottom: 40px;
-  font-weight:bolder;
+  font-weight: bolder;
+  z-index: 100;
 }
 
-#cursore {
+.cursore {
 	display: inline-block;
 	vertical-align: middle;
 	width: 3px;
@@ -429,6 +439,7 @@ body {
 	background-color: white;
   animation: blink .85s step-end infinite;
   margin-top: -40px;
+  z-index: 100;
 }
 
 @keyframes blink {
@@ -439,6 +450,8 @@ body {
 		background-color: white; 
 	}
 }
+
+
 
 .preload-ani {
   -webkit-animation: animation 2000ms linear infinite both;

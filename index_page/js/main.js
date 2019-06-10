@@ -101,7 +101,7 @@ function Delete() {
 }
 
 // Start the typing effect on load
-setTimeout(function(){_INTERVAL_VAL = setInterval(Type, 100);}, 2700);
+setTimeout(function(){_INTERVAL_VAL = setInterval(Type, 100);}, 2500);
 
 
 // Typer 1
