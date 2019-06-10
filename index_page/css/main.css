@@ -271,35 +271,19 @@ body {
 
 /* CUSTOMIZE THE CAROUSEL
 --------------------------------------------------------------------------------------------------------------------- */
-#myCarousel{
-  min-height: 450px;
-  min-width: 900px;
-  padding: 0;
-}
-/* Carousel base class */
-.carousel {
-  margin: 0;
-  min-height: 900px;
-  min-width: 100%;
-}
-
 /* Declare heights because of positioning of img element */
+
+
 .carousel-item {
   height: 450px;
   min-width: 900px;
 }
+
 .carousel-item > img {
   position: absolute;
   min-width: 50%;
   height: 450px;
   top: 0px;
-}
-.carousel-inner img {
-  margin: auto;
-}
-.carousel-item > .active {
-  height: 450px;
-  min-width: 900px;
 }
 .carousel-item-left{
   height: 450px;
@@ -311,13 +295,7 @@ body {
   min-width: 900px;
   display: none;
 }
-.featurette-heading{
-  position: inherit;
-  margin-top: 61px;
-}
-.text-box{
-  height: 202px;
-}
+
 
 
 
@@ -334,10 +312,11 @@ body {
   margin-right: 0;
   margin-left: 0;
   padding: 10px 0 20px 20px;
-  height: 497px;
-  width: 1900px;
+  height: 450px;
+  width: 100%;
   padding-top: 0;
 }
+
 
 
 /* Thin out the marketing headings */
@@ -381,7 +360,7 @@ body {
   }
 
   .text-over-video{
-    padding: 14% 0 10% 30%;
+    padding: 14% 0 10% 25%;
   }
   
   .text-over-video-sticky{
@@ -389,12 +368,74 @@ body {
   }
   
   .demo{
-    font-size: 3em;
+    font-size: .5em;
   }
 
   .texte {
+    font-size: .5em;
+  }
+  .row{
+    padding-bottom: 0;
+    height: 425px;
+  }
+  .row-text{
+    max-width: 55%;
+    bottom: 10%;
+  }
+  .typewriter{
+    font-size: 1.7em;
+  }
+  .programming-background{
+    min-width: 45%;
+  }
+  .featurette-heading{
     font-size: 3em;
   }
+  .carousel{
+    min-height: 300px;
+    padding-top: 6%;
+    bottom: 10%;
+  }
+  .carousel-item {
+    height: 300px;
+    min-width: 600px;
+  }
+  
+  .carousel-item > img {
+    position: absolute;
+    min-width: 25%;
+    height: 300px;
+    top: 0px;
+  }
+
+  .carousel-item-left{
+    height: 300px;
+    min-width: 600px;
+    display: none;
+  }
+  .carousel-item-next{
+    height: 300px;
+    min-width: 600px;
+    display: none;
+  }
+  .bottom-page1{
+    top: 1%;
+    margin-top: -1%;
+  }
+  .download{
+    margin-top: 20px;
+  }
+  .download-right{
+    float: right;
+  }
+  .download-headline{
+    font-size: 2.2em;
+  }
+  
+  .download-text{
+    font-size: 1.2em;
+  }
+  
 }
 
 @media (min-width: 62em) {
@@ -407,6 +448,8 @@ body {
 .btn1{
   margin: 50px 0 0 0;
 }
+
+
 /*--------------Typing TEXT-------------*/
 
 
