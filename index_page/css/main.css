@@ -180,8 +180,8 @@ body {
   display: block;
   width: 30px;
   height: 30px;
-  border-bottom: 5px solid #fff;
-  border-right: 5px solid #fff;
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
   transform: rotate(45deg);
   margin: -10px;
   animation: animate 2.5s infinite;
@@ -407,7 +407,13 @@ body {
     height: 90%;
   }
   .arrow{
-    bottom: -5%;
+    bottom: 5%;
+  }
+  .arrow span{
+    width: 22.5px;
+    height: 22.5px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
   }
   .text-over-video-sticky{
     margin-top: 4.5%;
