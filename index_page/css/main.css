@@ -122,7 +122,7 @@ body {
 .text-over-video{
   position: relative;
   height: 92.5%;
-  padding: 14% 0 10% 30%;
+  padding: 14% 0 32% 30%;
 }
 
 .text-over-video-sticky{
@@ -400,9 +400,20 @@ body {
   .myVideo{
     top: 60%;
   }
-
+  .inner{
+    font-size: 0.9em;
+  }
+  .masthead-brand{
+    font-size: 1.5rem;
+  }
+  .nav-bar{
+    padding: 1% 13% 3.10156% 13%;
+  }
+  .sticky{
+    padding-bottom: 10px;
+  }
   .text-over-video{
-    padding: 9% 0 0% 27%;
+    padding: 9% 0 33% 27%;
     height: 90%;
   }
   .arrow{
@@ -470,6 +481,9 @@ body {
     height: 300px;
     min-width: 600px;
     display: none;
+  }
+  .featurette-heading {
+    font-size: 2.7rem;
   }
   .bottom-page1{
     top: 1%;

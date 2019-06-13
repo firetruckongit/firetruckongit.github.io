@@ -19,7 +19,6 @@ function myFunction() {
   }
 }
 
-
 var i = 0;
 var txt = 'A place for'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
