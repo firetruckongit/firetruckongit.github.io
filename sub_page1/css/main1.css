@@ -352,10 +352,10 @@ body {
   }
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 35.31rem;
+    height: 37.125rem;
   }
   .carousel-item > img {
-    height: 35.31rem;
+    height: 37.125rem;
   }
   .carousel-caption p {
     font-size: 1rem;
