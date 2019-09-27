@@ -49,7 +49,7 @@ a:hover {
  /* Style the video: 100% width and height to cover the entire window*/
 .myVideo {
   position: fixed;
-  top: 75%;
+  top: 50%;
   left: 50%;
   min-width: 150%;
   min-height: 150%;
@@ -394,6 +394,7 @@ body {
   padding-bottom: 5px;
 }
 
+
 /* Responsive Firefox */
 
 @media only screen and (max-width: 1366px){
@@ -505,6 +506,35 @@ body {
   }
   .download:not(:hover){
     transform: scale(0.955);
+  }
+}
+
+@media (max-width:900px){
+  .myVideo{
+    top: 70%;
+  }
+  .nav-masthead{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8.5vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-right: 35%;
+  }
+  .active{
+    margin: 0 0 0 10rem;
+  }
+  .nav-link{
+    margin: 0 0 0 10rem;
+  }
+  .masthead-brand{
+    font-size: 1.5rem;
+  }
+  .nav-bar{
+    padding: 3% 0 0 5%;
   }
 }
 
