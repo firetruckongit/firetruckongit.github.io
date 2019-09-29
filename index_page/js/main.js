@@ -11,16 +11,14 @@ function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
     header.classList.remove("navbar-up");
-    container.classList.add("text-over-video-sticky");
   } else {
     header.classList.add("navbar-up");
     header.classList.remove("sticky");
-    container.classList.remove("text-over-video-sticky");
   }
 }
 
 var i = 0;
-var txt = 'A place for'; /* The text */
+var txt = 'A website made for'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
@@ -34,10 +32,10 @@ function typeWriter() {
 setTimeout(function(){typeWriter();}, 1850)
 // List of sentences
 var _CONTENT = [ 
-	"enthusiasts.", 
+	"fun.", 
 	"beginners.", 
-	"artists.", 
-	"web designers."
+	"experiments.", 
+	"tests."
 ];
 
 // Current sentence being processed
@@ -93,7 +91,7 @@ function Delete() {
 
 		// Start to display the next sentence after some time
 		setTimeout(function() {
-			_CURSOR.style.display = 'inline-block';
+			_CURSOR.style.display = 'inline-flex';
 			_INTERVAL_VAL = setInterval(Type, 85);
 		}, 200);
 	}
@@ -184,3 +182,29 @@ function pisanje1() {
 	  return;
   }
 }
+
+const navSlide = ()=>{
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-box');
+    const navLinks = document.querySelectorAll('.nav-box li');
+    //Toggle Nav
+    burger.addEventListener('click',() =>{
+
+        nav.classList.toggle('nav-active');
+
+        //Animate Links
+        navLinks.forEach((link,index) =>{
+            if (link.style.animation){
+                link.style.animation= '';
+            }
+            else{
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+            }
+        });
+        //Burger Animation
+        burger.classList.toggle('toggle');
+    });
+
+}
+
+navSlide();

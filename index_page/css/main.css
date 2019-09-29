@@ -70,7 +70,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #333;
+  background-color: #444;
   margin:0
 }
 
@@ -82,11 +82,21 @@ body {
 /* The Structure of the site (tested on Firefox) */
 
 .nav-bar{
-  padding: 1% 13% 45.6px 13%;
-  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   z-index: 9999;
-  position: relative;
-  opacity: 1;
+  position: fixed;
+  min-height: 7.5vh;
+  width: 100%;
+}
+
+.nav-box{
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  margin-left: 20%;
+  list-style-type: none;
 }
 
 .footer-container{
@@ -121,12 +131,10 @@ body {
 
 .text-over-video{
   position: relative;
-  height: 92.5%;
-  padding: 14% 0 32% 30%;
-}
-
-.text-over-video-sticky{
-  margin-top: 71.4px;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .download{
@@ -211,6 +219,19 @@ body {
 }
 .nav-masthead {
   float: right;
+}
+
+.burger{
+  display: none;
+  cursor: pointer;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color:rgb(226,226,226);
+  margin: 5px;
+  transition: all 0.3s ease;              /* Bitno */
 }
 
 
@@ -301,34 +322,33 @@ body {
 
 
 .demo{
+  display: inline-flex;
   font-size: 4em;
   text-align: left;
-  display: inline-block;
-  margin-top: 100px;
+  justify-content: space-around;
   padding: 0;
   z-index: 100;
+  padding-right: 10px;
 }
 
 .texte {
-	display: inline-block;
-	vertical-align: middle;
+  display: inline-flex;
 	color: #fff;
   letter-spacing: 2px;
+  justify-content: space-around;
   font-size: 4em;
-  padding-left: 15px;
-  margin-bottom: 40px;
-  font-weight: bolder;
+  font-weight: bold;
+  height: 5rem;
   z-index: 100;
 }
 
 .cursore {
-	display: inline-block;
-	vertical-align: middle;
-	width: 3px;
-	height: 5em;
+  display: inline-flex;
+  justify-content: space-around;
+  width: 3px;
+  height: 5em;
 	background-color: white;
   animation: blink .85s step-end infinite;
-  margin-top: -40px;
   z-index: 100;
 }
 
@@ -350,15 +370,18 @@ body {
   position: relative;
 }
 .row{
-  color:#fff;
-  margin-right: 0;
-  margin-left: 0;
-  padding: 10px 0 20px 20px;
-  height: 470px;
   width: 100%;
-  padding-top: 0;
+}
+.row1{
+  color:#fff;
+  display:inline-flex;
+  align-items: center;
 }
 
+.text-row1{
+  font-size: 1.25rem;
+  font-weight: 300;
+}
 
 
 /* Thin out the marketing headings */
@@ -372,181 +395,101 @@ body {
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position*/ 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
   background-color: #333;
-  padding-bottom: 10px;
-  animation-name: navbar-down;
-  animation-duration: 1s;
-}
-
-.sticky-carosel{
-  margin: 75px 0 0 0;
+  animation: navbar-down 0.3s ease-in;
 }
 
 .navbar-up{
-  animation-name: navbar-up;
-  animation-duration: 1.2s;
+  animation: navbar-up 0.3s ease-in;
 }
-
-.inner{
-  padding-bottom: 5px;
-}
-
 
 /* Responsive Firefox */
 
-@media only screen and (max-width: 1366px){
-  .myVideo{
-    top: 60%;
+@media screen and (max-width:1360px){
+  .texte{
+    font-size: 3em;
   }
-  .inner{
-    font-size: 0.9em;
-  }
-  .masthead-brand{
-    font-size: 1.5rem;
-  }
-  .nav-bar{
-    padding: 1% 13% 3.10156% 13%;
-  }
-  .sticky{
-    padding-bottom: 10px;
-  }
-  .text-over-video{
-    padding: 9% 0 35% 27%;
-    height: 90%;
-  }
-  .arrow{
-    bottom: 5%;
-  }
-  .arrow span{
-    width: 22.5px;
-    height: 22.5px;
-    border-bottom: 3px solid #fff;
-    border-right: 3px solid #fff;
-  }
-  .text-over-video-sticky{
-    margin-top: 4.5%;
-  }
-  
   .demo{
     font-size: 3em;
   }
 
-  .texte {
-    font-size: 3em;
-    margin-bottom: 2.8%;
-    padding-left: 1%;
+} 
+
+
+@media screen and (max-width:1600px){ 
+  .nav-box{
+    width: 32%;
   }
-  .row{
-    padding-bottom: 0;
-    height: 415px;
-  }
-  .row-text{
-    max-width: 55%;
-    bottom: 10%;
-  }
-  .typewriter{
-    font-size: 1.65em;
-  }
+}
+
+@media screen and (max-width:1024px){ 
   .programming-background{
-    min-width: 45%;
-  }
-  .featurette-heading{
-    font-size: 3em;
-  }
-  .carousel{
-    min-height: 300px;
-    padding-top: 6%;
-    bottom: 10%;
-  }
-  .carousel-item {
-    height: 300px;
-    min-width: 600px;
-  }
-  
-  .carousel-item > img {
-    position: absolute;
-    min-width: 25%;
-    height: 300px;
-    top: 0px;
-  }
-
-  .carousel-item-left{
-    height: 300px;
-    min-width: 600px;
     display: none;
   }
-  .carousel-item-next{
-    height: 300px;
-    min-width: 600px;
+  #myCarousel{
     display: none;
   }
-  .featurette-heading {
-    font-size: 2.7rem;
+}
+
+/* _____________________________________________________NOVO_______________________________________*/
+/*@media screen and (max-width:1024px){
+  .nav-links{
+      width: 60%;
   }
-  .bottom-page1{
-    top: 1%;
-    margin-top: -1%;
-    font-size: 3em;
+}*/
+/* Bitno */
+@media screen and (max-width:768px){        /* Bitno */
+  /*body{
+    overflow: hidden;
+  }*/
+  .nav-box{
+      position: absolute;
+      right:0px;
+      height: 93vh;
+      top: 7.5vh;
+      background-color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
   }
-  .download{
-    margin-top: 20px;
+  .nav-links li{
+      opacity: 0;
   }
-  .download-right{
-    float: right;
-  }
-  .download-headline{
-    font-size: 2em;
-  }
-  
-  .download-text{
-    font-size: 1em;
-  }
-  .download:not(:hover){
-    transform: scale(0.955);
+  .burger{
+      display: block;
   }
 }
 
-@media (max-width:900px){
-  .myVideo{
-    top: 70%;
-  }
-  .nav-masthead{
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8.5vh;
-    background-color: #333;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding-right: 35%;
-  }
-  .active{
-    margin: 0 0 0 10rem;
-  }
-  .nav-link{
-    margin: 0 0 0 10rem;
-  }
-  .masthead-brand{
-    font-size: 1.5rem;
-  }
-  .nav-bar{
-    padding: 3% 0 0 5%;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
+.nav-active{
+  transform: translateX(0%);
 }
 
 
+@keyframes navLinkFade{
+  from{
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
 
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
 
+/* _____________________________________________________NOVO_______________________________________*/
 
 .preload-ani {
   -webkit-animation: animation 2000ms linear infinite both;
@@ -652,29 +595,11 @@ body {
 /* Animations */
 
 @keyframes navbar-down{
-  0% {top: -50px; background-color:rgba(51, 51, 51, 0.1);}
-  10%{background-color:rgba(51, 51, 51, 0.2);}
-  20%{background-color:rgba(51, 51, 51, 0.3);}
-  30%{background-color:rgba(51, 51, 51, 0.4);}
-  40%{background-color:rgba(51, 51, 51, 0.5);}
-  50%{background-color:rgba(51, 51, 51, 0.6);}
-  60%{background-color:rgba(51, 51, 51, 0.7);}
-  70%{background-color:rgba(51, 51, 51, 0.8);}
-  80%{background-color:rgba(51, 51, 51, 0.9);}
-  90%{background-color:rgba(51, 51, 51, 1);}
-  100% {top: 0px;}
+  0% {background-color:rgba(51, 51, 51, 0);}
+  100%{background-color:rgba(51, 51, 51, 1);}
 }
 
 @keyframes navbar-up{
   0% {background-color:rgba(51, 51, 51, 1);}
-  10%{background-color:rgba(51, 51, 51, 0.9);}
-  20%{background-color:rgba(51, 51, 51, 0.8);}
-  30%{background-color:rgba(51, 51, 51, 0.7);}
-  40%{background-color:rgba(51, 51, 51, 0.6);}
-  50%{background-color:rgba(51, 51, 51, 0.5);}
-  60%{background-color:rgba(51, 51, 51, 0.4);}
-  70%{background-color:rgba(51, 51, 51, 0.3);}
-  80%{background-color:rgba(51, 51, 51, 0.2);}
-  90%{background-color:rgba(51, 51, 51, 0.1);}
   100%{background-color:rgba(51, 51, 51, 0);}
 }
