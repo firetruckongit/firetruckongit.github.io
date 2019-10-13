@@ -57,8 +57,8 @@ a:hover {
   height: auto;
   z-index: -100;
   transform: translateX(-50%) translateY(-50%);
-  /*transition: 1s opacity;*/
-  filter: blur(1px) brightness(50%);
+  /*transition: 1s opacity;
+  filter: blur(1px) brightness(50%);*/
 }
 /* Dimming the video */
 .overlay{
