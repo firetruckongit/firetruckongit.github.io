@@ -221,6 +221,6 @@ function videodelete() {
 	}
 };
 
-videodelete();
+//videodelete();
 
 navSlide();
