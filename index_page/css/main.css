@@ -355,18 +355,18 @@ ul {
 }
 
 .demo .toutiao {
-  height: 11vh;
+  height: 12.2vh; /*Visina između list items i trebalo bi stvaiti u media query */
   overflow: hidden;
   margin-left: 3%;
   width: 105%;
 }
 .demo{
-  height: 11vh;
+  height: 12.2vh;
   font-weight: 700;
 }
 
 .demo .toutiao ul li {
-  height: 11vh;
+  height: 12.2vh;
   
 }
 
