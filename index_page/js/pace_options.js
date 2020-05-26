@@ -1,5 +1,1 @@
-paceOptions = {
-    ajax: true, 
-    document: true, 
-    eventLag: false
-  };
+paceOptions={ajax:true,document:true,eventLag:false};
