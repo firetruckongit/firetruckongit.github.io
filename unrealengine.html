@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang=en>
 <head>
+<script>window.location="index.html"</script>
 <meta http-equiv=content-type content="text/html; charset=UTF-8">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=description content=idk>
@@ -54,7 +55,7 @@
 <ul>
 <li><p>games</p></li>
 <li><p>ideas</p></li>
-<li><p>movies</p></li>
+<li><p>films</p></li>
 <li><p>experiences</p></li>
 </ul>
 </div>
@@ -149,7 +150,7 @@
 </div>
 <footer class="mastfoot footer-container" style=background-color:#222;position:relative>
 <div class=footer-div style=margin-bottom:-16px>
-<p style=margin-bottom:-2rem>© 2018-2020 Dino Kokanovic · <a href=#>Privacy</a> · <a href=#>Terms</a></p>
+<p style=margin-bottom:-2rem>© 2018-2024 Dino Kokanović · <a href=/copyright.html>Copyright</a></p>
 </div>
 </footer>
 <script src=https://code.jquery.com/jquery-3.4.1.min.js integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=anonymous></script>
@@ -160,6 +161,6 @@
 <script src=../index_page/js/jQuery.js></script>
 <script src=sub_page3/js/main3.js></script>
 <script>var verticalLoop=new VerticalLoop(".demo2",{delay:2e3,order:"asc"})</script>
-<script>$("#arrow").click(function(){$("html,body").animate({scrollTop:$("#myCarousel").offset().top-70},"slow")})</script>
+<script>$("#arrow").click((function(){$("html,body").animate({scrollTop:$("#myCarousel").offset().top-70},"slow")}))</script>
 </body>
 </html>

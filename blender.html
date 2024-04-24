@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang=en>
 <head>
 <meta http-equiv=content-type content="text/html; charset=UTF-8">
@@ -33,9 +33,6 @@
 </li>
 <li>
 <a class="nav-link active" style=pointer-events:none href=#>Blender</a>
-</li>
-<li>
-<a class=nav-link href=/unrealengine.html>Unreal Engine</a>
 </li>
 </ul>
 <div class=burger>
@@ -74,7 +71,7 @@
 </ol>
 <div class=carousel-inner>
 <div class="carousel-item carouselimg1 active">
-<img src=../media/early_render_olovka_black.bmp alt=html>
+<img src=../media/early_render_olovka_black.png alt=html>
 <div class=container>
 <div class="carousel-caption text-left">
 <h1>Start simple</h1>
@@ -83,7 +80,7 @@
 </div>
 </div>
 <div class="carousel-item carouselimg2">
-<img src=../media/testing_volumetric_lighting.bmp alt=css>
+<img src=../media/testing_volumetric_lighting.png alt=css>
 <div class=container>
 <div class=carousel-caption>
 <h1>Create beautiful scenes</h1>
@@ -92,7 +89,7 @@
 </div>
 </div>
 <div class="carousel-item carouselimg3">
-<img src=../media/sci-fi(stolica).bmp alt=css>
+<img src=../media/sci-fi(stolica).png alt=css>
 <div class=container>
 <div class="carousel-caption text-right">
 <h1>Experiment your ideas</h1>
@@ -112,21 +109,21 @@
 </div>
 <div class=card-columns>
 <div class="card card1">
-<img src=../media/cup_card_opt.jpg class=card-img-top alt=... onclick='window.open("../media/cup.png")'>
+<img src=../media/cup_card_opt.png class=card-img-top alt=... onclick='window.open("../media/cup.png")'>
 <div class=card-body>
 <h5 class=card-title>Start with just a cup!</h5>
 <p class=card-text>Nothing complicated to make for a beginner</p>
 </div>
 </div>
 <div class="card card1">
-<img src=../media/cloth_sim_card_opt.jpg class=card-img-top alt=... onclick='window.open("../media/cloth_sim.png")'>
+<img src=../media/cloth_sim_card_opt.png class=card-img-top alt=... onclick='window.open("../media/cloth_sim.png")'>
 <div class=card-body>
 <h5 class=card-title>Simulations</h5>
 <p class=card-text>Featuring industry-standards libraries like Bullet and MantaFlow, Blender offers powerful simulation tools.</p>
 </div>
 </div>
 <div class="card card1">
-<img src=../media/glassofwater_card_opt.jpg class=card-img-top alt=... onclick='window.open("../media/glassofwater.png")'>
+<img src=../media/glassofwater_card_opt.png class=card-img-top alt=... onclick='window.open("../media/glassofwater.png")'>
 <div class=card-body>
 <h5 class=card-title>Sculpting</h5>
 <p class=card-text>Sculpting, retopology, modeling, curves. Blender’s modeling toolset is extensive.</p>
@@ -143,17 +140,17 @@ Quote from somebody
 </blockquote>
 </div>
 <div class="card card1 text-center">
-<img src=../media/alien_world_EEVEE_card_opt.jpg class=card-img-bottom alt=... onclick='window.open("../media/alien_world_EEVEE.bmp")'>
+<img src=../media/alien_world_EEVEE_card_opt.png class=card-img-bottom alt=... onclick='window.open("../media/alien_world_EEVEE.png")'>
 </div>
 <div class="card card1">
-<img src=../media/procedural_island_card_opt.jpg class=card-img-bottom alt=... onclick='window.open("../media/procedural_island.bmp")'>
+<img src=../media/procedural_island_card_opt.png class=card-img-bottom alt=... onclick='window.open("../media/procedural_island.png")'>
 <div class=card-body>
 <h5 class=card-title>Modifiers</h5>
 <p class=card-text>With modifiers, you can perform many effects automatically that would otherwise be too tedious to update manually (such as subdivision surfaces) and without affecting the base geometry of your object.</p>
 </div>
 </div>
 <div class="card card1">
-<img src=../media/tv_zvucnici_card_opt.jpg class=card-img-bottom alt=... onclick='window.open("../media/tv_zvucnici.bmp")'>
+<img src=../media/tv_zvucnici_card_opt.png class=card-img-bottom alt=... onclick='window.open("../media/tv_zvucnici.png")'>
 <div class=card-body>
 <h5 class=card-title>Rendering</h5>
 <p class=card-text>Create jaw-dropping renders thanks to Cycles, high-end production path tracer.</p>
@@ -176,7 +173,7 @@ Quote from somebody
 </div>
 <footer class="mastfoot footer-container" style=background-color:#222;position:relative>
 <div class=footer-div style=margin-bottom:-16px>
-<p style=margin-bottom:-2rem>© 2018-2020 Dino Kokanovic · <a href=#>Privacy</a> · <a href=#>Terms</a></p>
+<p style=margin-bottom:-2rem>© 2018-2024 Dino Kokanović · <a href=/copyright.html>Copyright</a></p>
 </div>
 </footer>
 <script src=https://code.jquery.com/jquery-3.4.1.min.js integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=anonymous></script>
@@ -187,6 +184,6 @@ Quote from somebody
 <script src=../index_page/js/jQuery.js></script>
 <script src=sub_page2/js/main2.js></script>
 <script>var verticalLoop=new VerticalLoop(".demo2",{delay:2e3,order:"asc"})</script>
-<script>$("#arrow").click(function(){$("html,body").animate({scrollTop:$("#myCarousel").offset().top-70},"slow")})</script>
+<script>$("#arrow").click((function(){$("html,body").animate({scrollTop:$("#myCarousel").offset().top-70},"slow")}))</script>
 </body>
 </html>

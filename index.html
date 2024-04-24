@@ -3,30 +3,97 @@
 <head>
 <meta http-equiv=content-type content="text/html; charset=UTF-8">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta name=description content="Under Construction">
 <meta name=author content="Dino Kokanovic">
-<meta name=generator content="Jekyll v3.8.5">
+<title>Homepage</title>
 <meta name=theme-color content=#222>
-<title>Page Under Construction</title>
+<link rel=icon type=image/png href=/media/home_icon.png sizes=32x32>
 <link rel=stylesheet href=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css integrity=sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T crossorigin=anonymous>
-<link href=/construction_site/css/main42.css rel=stylesheet>
+<link href=index_page/css/main.css rel=stylesheet>
+<script src=index_page/js/pace.js></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel=stylesheet>
 <style>.text-over-video{font-family:'Open Sans',sans-serif}</style>
 </head>
 <body>
+<div id=preload class=preload-back>
+<div class="box preload-ani"></div>
+</div>
 <div class=cover-container>
-<video autoplay muted loop class="myVideo overlay">
-<source src=../media/banana(VP3).mp4 type=video/mp4>
+<video id=video autoplay muted loop class="myVideo overlay">
+<source src=media/banana(VP3).mp4 type=video/mp4>
 </video>
 </div>
-<div class=boi-text>
-<h1 class=boi-text1>
-Page under construction
-</h1>
+<header class=nav-bar id=nav-bar>
+<h3 class=masthead-brand>Home</h3>
+<ul class="nav-box nav-masthead">
+<li>
+<a class="nav-link active" style=pointer-events:none href=#>Home</a>
+</li>
+<li>
+<a class=nav-link href=/web_design.html>Web design</a>
+</li>
+<li>
+<a class=nav-link href=/blender.html>Blender</a>
+</li>
+</ul>
+<div class=burger>
+<div class=line1></div>
+<div class=line2></div>
+<div class=line3></div>
+</div>
+</header>
+<div id=container class=text-over-video>
+<div class=text-box>
+<div id=deo class=text-main>
+<p class=text-main>Website made for</p>
+</div>
+<div class=demo>
+<div class="toutiao demo2">
+<ul>
+<li><p>fun</p></li>
+<li><p>beginners</p></li>
+<li><p>experiments</p></li>
+<li><p>tests</p></li>
+<li><p>learning</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class=arrow>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+<div class=second-part-page>
+<div class=row>
+<a class="rowimg rowimg1" href=/web_design.html></a>
+<div class=rowtext>
+<h2 class=featurette-heading>HTML 5 <span class=text-muted>Modern Web.</span></h2>
+<p class=text-row1>HTML 5 is the fifth and current major version of HTML, and subsumes XHTML. The current standard, the HTML Living Standard is developed by WHATWG, which is made up of the major browser vendors (Apple, Google, Mozilla, and Microsoft), with the Living Standard also existing in an abridged version.</p>
+</div>
+</div>
+<div class=row>
+<a style=align-items:stretch class="rowimg rowimg2" href=/blender.html></a>
+<img class=blenderimg src=/media/external-content.duckduckgo.com.png alt="">
+<div class=rowtext>
+<h2 class=featurette-heading>Blender <span class=text-muted>Great 3D program.</span></h2>
+<p class=text-row1>Blender is the free and open source 3D creation suite. It supports the entirety of the 3D pipeline modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation. Blender is well suited to individuals and small studios who benefit from its unified pipeline and responsive development process.</p>
+</div>
+</div>
 </div>
 <footer class="mastfoot footer-container">
 <div class=footer-div>
-<p>© 2018-2023 Dino Kokanovic · <a href=#>Privacy</a> · <a href=#>Terms</a></p>
+<p style=margin-bottom:-2rem>© 2018-2024 Dino Kokanović · <a href=/copyright.html>Copyright</a></p>
 </div>
 </footer>
+<script src=https://code.jquery.com/jquery-3.4.1.min.js integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js integrity=sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 crossorigin=anonymous></script>
+<script src=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js integrity=sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM crossorigin=anonymous></script>
+<script src=index_page/js/jquery-vertical-loop.js></script>
+<script src=index_page/js/main.js></script>
+<script src=index_page/js/pace_options.js></script>
+<script src=index_page/js/jQuery.js></script>
+<script>var verticalLoop=new VerticalLoop(".demo2",{delay:2e3,order:"asc"})</script>
+<script>$("#preload").delay(2e3).fadeOut("slow")</script>
 </body>
 </html>
